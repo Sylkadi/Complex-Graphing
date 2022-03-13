@@ -24,7 +24,7 @@ namespace Complex_Graphing
     {
 
         private Bitmap bitMap;
-
+        
         public static double n = -5, // The changing value
                              YBottom = -3.0, //  bottom of graph
                              YTop = 3.0;   // top of graph (left and right are scaled proportionally to fit on the screen properly)
