@@ -28,7 +28,7 @@ namespace Complex_Graphing
             BitmapData data = bitmap.LockBits(new Rectangle(0, 0, bitmap.Width, bitmap.Height), ImageLockMode.ReadWrite, bitmap.PixelFormat);
             byte[] buffer = new byte[data.Width * data.Height * (Image.GetPixelFormatSize(data.PixelFormat) / 8)];
             Marshal.Copy(data.Scan0, buffer, 0, buffer.Length);
-
+            
             // For Mulithreading
             void ComputePixelColor(int YStart, int YEnd)
             {
